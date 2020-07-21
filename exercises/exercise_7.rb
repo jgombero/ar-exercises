@@ -9,4 +9,7 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+store_name = gets.chomp
+
+error_emporium = Store.create(name: store_name)
+puts error_emporium.errors.messages
